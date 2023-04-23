@@ -2,4 +2,4 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', fn () => dd('Hello World'));
+Route::get('/', fn () => inertia('Home'));
