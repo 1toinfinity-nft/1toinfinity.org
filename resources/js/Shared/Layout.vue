@@ -9,24 +9,13 @@
                 </div>
                 <nav id="navigation">
                     <ol class="flex gap-8 text-sm font-bold">
-                        <li class="underline decoration-2 underline-offset-8">
-                            Home
-                        </li>
-                        <li
+                        <Link
+                            :href="val"
                             class="hover:underline decoration-2 underline-offset-8"
+                            v-for="(val, key) in navigationItems"
                         >
-                            Collection
-                        </li>
-                        <li
-                            class="hover:underline decoration-2 underline-offset-8"
-                        >
-                            About
-                        </li>
-                        <li
-                            class="hover:underline decoration-2 underline-offset-8"
-                        >
-                            Roadmap
-                        </li>
+                            {{ key }}
+                        </Link>
                     </ol>
                 </nav>
                 <div id="call-to-action">
@@ -90,4 +79,14 @@
     </footer>
 </template>
 
-<script setup></script>
+<script setup>
+import { Link } from "@inertiajs/vue3";
+
+const navigationItems = {
+    Home: "/",
+    Collection: "/collection",
+    About: "/about",
+    Roadmap: "/roadmap",
+    Blog: "/blog",
+};
+</script>
