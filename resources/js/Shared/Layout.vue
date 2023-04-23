@@ -53,22 +53,25 @@
                 <ul class="flex items-center gap-6">
                     <li>
                         <a
-                            href="#"
+                            href="https://instagram.com/1toinfinity_nft"
                             class="hover:underline decoration-2 underline-offset-8"
+                            target="__blank"
                             >Instagram</a
                         >
                     </li>
                     <li>
                         <a
-                            href="#"
+                            href="https://twitter.com/1toinfinity_nft"
                             class="hover:underline decoration-2 underline-offset-8"
+                            target="__blank"
                             >Twitter</a
                         >
                     </li>
                     <li>
                         <a
-                            href="#"
+                            href="https://github.com/1toinfinity-nft"
                             class="hover:underline decoration-2 underline-offset-8"
+                            target="__blank"
                             >Github</a
                         >
                     </li>
