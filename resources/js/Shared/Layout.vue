@@ -10,11 +10,14 @@
                 <nav id="navigation">
                     <ol class="flex gap-8 text-sm font-bold">
                         <Link
-                            :href="val"
-                            class="hover:underline decoration-2 underline-offset-8"
-                            v-for="(val, key) in navigationItems"
+                            :href="navigationItem.link"
+                            :class="{
+                                'hover:underline decoration-2 underline-offset-8': true,
+                                underline: navigationItem.isActive,
+                            }"
+                            v-for="navigationItem in navigationItems"
                         >
-                            {{ key }}
+                            {{ navigationItem.label }}
                         </Link>
                     </ol>
                 </nav>
@@ -85,11 +88,31 @@
 <script setup>
 import { Link } from "@inertiajs/vue3";
 
-const navigationItems = {
-    Home: "/",
-    Collection: "/collection",
-    About: "/about",
-    Roadmap: "/roadmap",
-    Blog: "/blog",
-};
+const navigationItems = [
+    {
+        label: "Home",
+        link: route("front.home"),
+        isActive: route().current("front.home"),
+    },
+    {
+        label: "Collection",
+        link: route("front.collection"),
+        isActive: route().current("front.collection"),
+    },
+    {
+        label: "About",
+        link: route("front.about"),
+        isActive: route().current("front.about"),
+    },
+    {
+        label: "Roadmap",
+        link: route("front.roadmap"),
+        isActive: route().current("front.roadmap"),
+    },
+    {
+        label: "Blog",
+        link: route("front.blog"),
+        isActive: route().current("front.blog"),
+    },
+];
 </script>
