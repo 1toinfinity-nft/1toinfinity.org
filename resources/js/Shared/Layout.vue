@@ -22,8 +22,10 @@
                     </ol>
                 </nav>
                 <div id="call-to-action">
-                    <button
+                    <a
                         class="bg-gray-500 hover:bg-gray-600 px-4 py-2 rounded-lg font-bold flex items-center gap-2"
+                        href="https://opensea.io/collection/1toinfinity-nft"
+                        target="_blank"
                     >
                         <span> OpenSea </span>
                         <svg
@@ -40,7 +42,7 @@
                                 d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
                             />
                         </svg>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -58,7 +60,7 @@
                         <a
                             href="https://instagram.com/1toinfinity_nft"
                             class="hover:underline decoration-2 underline-offset-8"
-                            target="__blank"
+                            target="_blank"
                             >Instagram</a
                         >
                     </li>
@@ -66,7 +68,7 @@
                         <a
                             href="https://twitter.com/1toinfinity_nft"
                             class="hover:underline decoration-2 underline-offset-8"
-                            target="__blank"
+                            target="_blank"
                             >Twitter</a
                         >
                     </li>
@@ -74,7 +76,7 @@
                         <a
                             href="https://github.com/1toinfinity-nft"
                             class="hover:underline decoration-2 underline-offset-8"
-                            target="__blank"
+                            target="_blank"
                             >Github</a
                         >
                     </li>
