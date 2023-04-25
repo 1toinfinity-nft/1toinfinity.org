@@ -31,7 +31,7 @@
 
         <section
             id="recently-minted"
-            class="bg-gradient-to-b from-primary-dark to-primary py-12 md:py-40"
+            class="bg-gradient-to-b from-primary to-primary-dark py-12 md:py-40"
         >
             <div class="container max-w-5xl mx-auto">
                 <h2 class="text-2xl font-bold text-center mb-12">
@@ -57,7 +57,7 @@
             </div>
         </section>
 
-        <section id="why-numbers" class="bg-primary-dark py-12 md:py-40">
+        <section id="why-numbers" class="bg-primary py-12 md:py-40">
             <div class="container max-w-5xl mx-auto">
                 <h2 class="text-2xl font-bold text-center mb-12">
                     Why Numbers

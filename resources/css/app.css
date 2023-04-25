@@ -10,5 +10,5 @@
 }
 
 body {
-    @apply bg-primary text-white;
+    @apply bg-primary-dark text-white;
 }
