@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Str;
 
 class Blog extends Model
@@ -26,5 +27,15 @@ class Blog extends Model
             $blog->slug = $blog->id . '-' . $blog->slug;
             $blog->save();
         });
+    }
+
+    public static function findBySlug(string $slug): ?static
+    {
+        return static::firstWhere('slug', $slug);
+    }
+
+    public function author(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
     }
 }

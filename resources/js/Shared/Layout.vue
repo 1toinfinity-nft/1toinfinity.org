@@ -184,7 +184,8 @@ const navigationItems = [
     {
         label: "Blog",
         link: route("front.blog"),
-        isActive: route().current("front.blog"),
+        isActive:
+            route().current("front.blog") || route().current("front.blog.*"),
     },
 ];
 
