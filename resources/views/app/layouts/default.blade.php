@@ -40,6 +40,11 @@
 
     @yield('content')
 
+    @if(session('message'))
+    <script>
+        alert("{{ session('message') }}");
+    </script>
+    @endif
     @stack('scripts')
 
 </body>

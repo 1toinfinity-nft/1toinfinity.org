@@ -11,7 +11,7 @@ class BlogController extends Controller
     {
         return view('app.blogs.index', [
             'title' => 'Blogs',
-            'blogs' => Blog::latest()->paginate(25),
+            'blogs' => Blog::latest()->paginate(5),
         ]);
     }
 
@@ -31,26 +31,13 @@ class BlogController extends Controller
 
         Blog::create($data);
 
-        return to_route('app.blogs.index');
-    }
-
-    public function show(Blog $blog)
-    {
-        //
-    }
-
-    public function edit(Blog $blog)
-    {
-        //
-    }
-
-    public function update(Request $request, Blog $blog)
-    {
-        //
+        return to_route('app.blogs.index')->with('message', 'Blog created successfully.');
     }
 
     public function destroy(Blog $blog)
     {
-        //
+        $blog->delete();
+
+        return to_route('app.blogs.index')->with('message', 'Blog deleted successfully.');
     }
 }

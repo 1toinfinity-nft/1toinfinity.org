@@ -9,5 +9,7 @@
     @empty
     No Blogs Found!
     @endforelse
+
+    {{ $blogs->links() }}
 </div>
 @endsection

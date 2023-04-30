@@ -10,7 +10,9 @@ Route::domain('app.' . env('APP_TLD'))->group(function () {
     Route::middleware('auth')->group(function () {
         Route::view('/dashboard', 'app.dashboard', ['title' => 'Dashboard'])->name('app.dashboard');
 
-        Route::resource('/blogs', BlogController::class)->names('app.blogs');
+        Route::resource('/blogs', BlogController::class, [
+            'except' => ['show', 'edit', 'update']
+        ])->names('app.blogs');
     });
 });
 
