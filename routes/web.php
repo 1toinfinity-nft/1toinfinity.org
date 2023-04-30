@@ -2,6 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
+$tld = str_replace(['https://', 'http://'], '', env('APP_URL'));
+
+// App Routes (app.domain.tld)
+Route::domain('app.' . $tld)->group(function () {
+    Route::get('/', fn () => dd('Hello World'))->name('app.home');
+});
+
+// Front Routes (domain.tld)
 Route::get('/', fn () => inertia('Home'))->name('front.home');
 Route::get('/about', fn () => inertia('About'))->name('front.about');
 Route::get('/blog', fn () => inertia('Blog'))->name('front.blog');
