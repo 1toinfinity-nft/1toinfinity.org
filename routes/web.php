@@ -8,9 +8,9 @@ Route::domain('app.' . env('APP_TLD'))->group(function () {
     Route::redirect('/', '/login');
 
     Route::middleware('auth')->group(function () {
-        Route::view('/dashboard', 'app.dashboard');
+        Route::view('/dashboard', 'app.dashboard', ['title' => 'Dashboard'])->name('app.dashboard');
 
-        Route::resource('/blogs', BlogController::class);
+        Route::resource('/blogs', BlogController::class)->names('app.blogs');
     });
 });
 

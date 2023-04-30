@@ -19,12 +19,23 @@
     @endif
 
     @auth
-    <form action="{{ route('logout') }}" method="post">
-        @csrf
-        <button type="submit">
-            Logout
-        </button>
-    </form>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ route('app.dashboard') }}">Dashboard</a></li>
+                <li><a href="{{ route('app.blogs.index') }}">Blogs</a></li>
+                <li><a href="{{ route('app.blogs.create') }}">Blog Create</a></li>
+                <li>
+                    <form action="{{ route('logout') }}" method="post">
+                        @csrf
+                        <button type="submit">
+                            Logout
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
     @endauth
 
     @yield('content')
