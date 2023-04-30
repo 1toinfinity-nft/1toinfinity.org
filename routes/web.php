@@ -4,7 +4,11 @@ use Illuminate\Support\Facades\Route;
 
 // App Routes (app.domain.tld)
 Route::domain('app.' . env('APP_TLD'))->group(function () {
-    Route::get('/', fn () => dd('Hello World'))->name('app.home');
+    Route::redirect('/', '/login');
+
+    Route::middleware('auth')->group(function () {
+        Route::view('/dashboard', 'app.dashboard');
+    });
 });
 
 // Front Routes (domain.tld)
