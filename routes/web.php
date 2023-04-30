@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 
 // App Routes (app.domain.tld)
@@ -8,6 +9,8 @@ Route::domain('app.' . env('APP_TLD'))->group(function () {
 
     Route::middleware('auth')->group(function () {
         Route::view('/dashboard', 'app.dashboard');
+
+        Route::resource('/blogs', BlogController::class);
     });
 });
 
