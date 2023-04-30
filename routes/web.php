@@ -2,10 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
-$tld = str_replace(['https://', 'http://'], '', env('APP_URL'));
-
 // App Routes (app.domain.tld)
-Route::domain('app.' . $tld)->group(function () {
+Route::domain('app.' . env('APP_TLD'))->group(function () {
     Route::get('/', fn () => dd('Hello World'))->name('app.home');
 });
 
