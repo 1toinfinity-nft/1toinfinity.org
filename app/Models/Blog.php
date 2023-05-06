@@ -50,6 +50,11 @@ class Blog extends Model
         return static::firstWhere('slug', $slug);
     }
 
+    public function isPublished(): bool
+    {
+        return !is_null($this->published_at);
+    }
+
     public function generateSlug(bool $generateSlugForUrl = false): string
     {
         $slugPrefix = '';

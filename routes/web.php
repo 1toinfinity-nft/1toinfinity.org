@@ -12,7 +12,7 @@ Route::domain('app.' . env('APP_TLD'))->group(function () {
         Route::view('/dashboard', 'app.dashboard', ['title' => 'Dashboard'])->name('app.dashboard');
 
         Route::resource('/blogs', BlogController::class, [
-            'except' => ['show', 'edit', 'update']
+            'except' => ['show']
         ])->names('app.blogs');
     });
 });

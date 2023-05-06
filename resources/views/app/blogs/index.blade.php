@@ -5,7 +5,7 @@
     @forelse($blogs as $blog)
     <ul>
         <li>
-            {{ $blog->title }}
+            {{ $blog->title }} <a href="{{ route('app.blogs.edit', [$blog]) }}">[Edit]</a>
             <form action="{{ route('app.blogs.destroy', [$blog]) }}" method="post">
                 @csrf
                 @method('delete')
