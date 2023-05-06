@@ -5,6 +5,7 @@ namespace App\Http\Controllers\App;
 use App\Models\Blog;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 
 class BlogController extends Controller
 {
@@ -30,7 +31,7 @@ class BlogController extends Controller
             'content' => ['min:3', 'max:30000', 'string'],
         ]);
 
-        Blog::create($data);
+        DB::transaction(fn () => Blog::create($data));
 
         return to_route('app.blogs.index')->with('message', 'Blog created successfully.');
     }

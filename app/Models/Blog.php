@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use GrahamCampbell\Markdown\Facades\Markdown;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -24,12 +25,12 @@ class Blog extends Model
     {
         static::creating(function (Blog $blog) {
             $blog->author_id = $blog->author_id ?? auth()->id();
-            $blog->slug = Str::slug($blog->title);
-            $blog->excerpt = substr(strip_tags($blog->content), 0, 150);
+            $blog->slug = $blog->title;
+            $blog->excerpt = $blog->generateExcerpt();
         });
 
         static::created(function (Blog $blog) {
-            $blog->slug = $blog->id . '-' . $blog->slug;
+            $blog->slug = $blog->generateSlug(true);
             $blog->save();
         });
     }
@@ -47,5 +48,33 @@ class Blog extends Model
     public static function findBySlug(string $slug): ?static
     {
         return static::firstWhere('slug', $slug);
+    }
+
+    public function generateSlug(bool $generateSlugForUrl = false): string
+    {
+        $slugPrefix = '';
+
+        if ($generateSlugForUrl) {
+            $slugPrefix .=  $this->id . '-';
+        }
+
+        return $slugPrefix . Str::slug($this->title);
+    }
+
+    public function generateExcerpt(int $length = 150, int $offset = 0): string
+    {
+        return trim(
+            substr(
+                preg_replace(
+                    '/\s+/',
+                    ' ',
+                    strip_tags(
+                        Markdown::convert($this->content)->getContent()
+                    ),
+                ),
+                $offset,
+                $length
+            )
+        );
     }
 }
