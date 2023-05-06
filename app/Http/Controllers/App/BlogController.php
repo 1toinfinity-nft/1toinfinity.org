@@ -12,7 +12,7 @@ class BlogController extends Controller
     {
         return view('app.blogs.index', [
             'title' => 'Blogs',
-            'blogs' => Blog::latest()->paginate(5),
+            'blogs' => Blog::latest()->paginate(25),
         ]);
     }
 
