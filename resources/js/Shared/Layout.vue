@@ -1,5 +1,5 @@
 <template>
-    <header class="sticky inset-0 bg-transparent py-4 bg backdrop-blur-md">
+    <header class="sticky inset-0 bg-transparent py-4 bg backdrop-blur-md z-50">
         <div class="container max-w-5xl mx-auto">
             <div class="flex justify-between items-center">
                 <div id="logo">
