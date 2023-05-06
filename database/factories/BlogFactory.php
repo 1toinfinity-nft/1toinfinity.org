@@ -15,10 +15,9 @@ class BlogFactory extends Factory
     {
         return [
             'author_id' => User::inRandomOrder()->first()->id,
-            'title' => $title = $this->faker->words(rand(7, 15), true),
-            'slug' => Str::slug($title),
-            'content' => $content = $this->faker->sentences(rand(15, 20), true),
-            'excerpt' => substr(strip_tags($content), 0, 150),
+            'title' => $this->faker->words(rand(7, 15), true),
+            'content' => $this->faker->sentences(rand(15, 20), true),
+            'published_at' => $this->faker->randomElement([null, now()->subMinutes(rand(1, 30))]),
         ];
     }
 }

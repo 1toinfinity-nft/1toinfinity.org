@@ -10,7 +10,10 @@ class BlogController extends Controller
     public function index()
     {
         return inertia('Blog/Index', [
-            'blogs' => Blog::with('author')->latest()->paginate(15),
+            'blogs' => Blog::with('author:id,name')
+                ->published()
+                ->latest()
+                ->paginate(15),
         ]);
     }
 

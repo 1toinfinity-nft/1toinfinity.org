@@ -17,7 +17,7 @@
                             </Link>
                         </h2>
                         <p>{{ blog.excerpt }}</p>
-                        <p>{{ blog.created_at }}</p>
+                        <p>{{ blog.published_at }}</p>
                         <p>{{ blog.author.name }}</p>
                     </div>
                 </div>

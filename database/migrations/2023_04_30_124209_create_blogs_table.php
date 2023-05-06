@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('title');
             $table->text('content');
             $table->string('excerpt', 150);
+            $table->dateTime('published_at')->nullable();
             $table->timestamps();
         });
     }
