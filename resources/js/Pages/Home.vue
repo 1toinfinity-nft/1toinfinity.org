@@ -5,9 +5,10 @@
                 <div class="md:flex items-center justify-between">
                     <div id="masthead-text" class="flex-1 text-left">
                         <div class="flex flex-col gap-8">
-                            <h4 class="text-primary-light text-sm font-bold">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit.
+                            <h4
+                                class="text-primary-light text-sm font-bold h-1"
+                            >
+                                <span id="typed-formula">&nbsp;</span>
                             </h4>
                             <h1 class="text-white text-6xl font-bold">
                                 Explore the magical numbers starting from 1 to
@@ -15,10 +16,11 @@
                                 here.
                             </h1>
                             <h3 class="text-white text-xl leading-5">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Consequatur nostrum rerum
-                                excepturi non. Qui neque hic distinctio
-                                doloremque cumque corporis?
+                                <i
+                                    >"Pure mathematics is, in its way, the
+                                    poetry of logical ideas"</i
+                                >
+                                ~ <b>Albert Einstein</b>
                             </h3>
                         </div>
                     </div>
@@ -134,6 +136,15 @@
 <script setup>
 import Layout from "../Shared/Layout.vue";
 import MastheadGraph from "../../img/masthead-graph.png";
+import Typed from "typed.js";
+setTimeout(function () {
+    new Typed("#typed-formula", {
+        strings: ["K = 2NuP K = u"],
+        typeSpeed: 75,
+        showCursor: false,
+        smartBackspace: false,
+    });
+}, 1000);
 
 // @todo REFACTOR - To collection.js file
 const collection = [
@@ -145,4 +156,5 @@ const collection = [
         published_at: "2023-05-07",
     },
 ];
+// K = 2NuP K = u
 </script>
