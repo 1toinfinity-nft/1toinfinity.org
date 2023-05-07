@@ -29,17 +29,13 @@
                     Why 1 to infinity
                 </h1>
                 <p class="text-justify text-lg">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Esse itaque libero praesentium autem, atque corrupti
-                    explicabo voluptatum neque adipisci. Minima nostrum voluptas
-                    quas! Fugit maiores aperiam, numquam tempore sint ratione
-                    distinctio molestiae illo asperiores est, inventore, modi
-                    reiciendis totam explicabo. Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Odio aspernatur neque
-                    voluptatibus et quas ab a dolore beatae facere impedit.
-                    Deleniti nesciunt corrupti architecto eaque, veritatis
-                    aspernatur harum soluta est earum odio alias. Maxime
-                    nesciunt laudantium consequuntur neque rerum labore.
+                    The goal is to make 1ToInfinity a community driven non-profit project and all the money made from selling these NFT's will be given back in the folowing ways:
+                    <ol class="list-disc list-inside">
+                        <li>33% to sponsor ongoing projects in the web3 space</li>
+                        <li>33% to creators/artists that'll make these NFT's</li>
+                        <li>33% to 1ToInfinity</li>
+                        <li>1% to <a href="https://carbon180.org/">Carbon180</a> to help remove CO2 from the atmosphere in an attemp to change the course of climate change</li>
+                    </ol>
                 </p>
             </div>
         </section>
