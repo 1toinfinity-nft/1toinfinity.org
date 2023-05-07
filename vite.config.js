@@ -13,7 +13,7 @@ export default defineConfig({
             targets: [
                 {
                     src: "resources/img/collection",
-                    dest: "collection",
+                    dest: "",
                 },
             ],
         }),
