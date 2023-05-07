@@ -15,19 +15,7 @@
                             About
                         </h1>
                         <p class="text-justify text-lg">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Esse itaque libero praesentium autem, atque
-                            corrupti explicabo voluptatum neque adipisci. Minima
-                            nostrum voluptas quas! Fugit maiores aperiam,
-                            numquam tempore sint ratione distinctio molestiae
-                            illo asperiores est, inventore, modi reiciendis
-                            totam explicabo. Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Odio aspernatur neque
-                            voluptatibus et quas ab a dolore beatae facere
-                            impedit. Deleniti nesciunt corrupti architecto
-                            eaque, veritatis aspernatur harum soluta est earum
-                            odio alias. Maxime nesciunt laudantium consequuntur
-                            neque rerum labore.
+                            1ToInfinity is a collection of NFTs for one of the most magical and intriguing things humans have ever discovered, <i>Numbers</i>. 1ToInfinity will be minting one number per week from 1 to infinity.   
                         </p>
                     </div>
                 </div>
