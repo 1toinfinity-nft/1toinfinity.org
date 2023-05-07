@@ -1,4 +1,5 @@
 <template>
+    <Head title="Home" />
     <Layout>
         <section id="masthead" class="py-12 md:py-40">
             <div class="container max-w-5xl mx-auto">
@@ -137,6 +138,8 @@
 import Layout from "../Shared/Layout.vue";
 import MastheadGraph from "../../img/masthead-graph.png";
 import Typed from "typed.js";
+import { Head } from "@inertiajs/vue3";
+
 setTimeout(function () {
     new Typed("#typed-formula", {
         strings: ["K = 2NuP K = u"],
@@ -156,5 +159,4 @@ const collection = [
         published_at: "2023-05-07",
     },
 ];
-// K = 2NuP K = u
 </script>

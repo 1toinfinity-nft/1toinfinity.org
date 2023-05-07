@@ -1,4 +1,5 @@
 <template>
+    <Head title="Collection" />
     <Layout>
         <section id="collection" class="py-12">
             <div class="container max-w-5xl mx-auto">
@@ -18,6 +19,7 @@
 
 <script setup>
 import Layout from "../Shared/Layout.vue";
+import { Head } from "@inertiajs/vue3";
 
 // @todo REFACTOR - To collection.js file
 const collection = [

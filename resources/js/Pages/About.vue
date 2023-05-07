@@ -1,4 +1,5 @@
 <template>
+    <Head title="About" />
     <Layout>
         <section id="about" class="py-12">
             <div class="container max-w-5xl mx-auto">
@@ -95,4 +96,5 @@
 import Layout from "../Shared/Layout.vue";
 import PlaceholderNft from "../../img/placeholder-nft.jpg";
 import TauseefShah from "../../img/tauseef-shah.jpg";
+import { Head } from "@inertiajs/vue3";
 </script>
