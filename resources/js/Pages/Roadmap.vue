@@ -5,59 +5,22 @@
                 <div class="flex flex-col gap-12 max-w-lg m-auto">
                     <h1 class="text-4xl text-center">Roadmap</h1>
                     <div id="roadmap-points">
-                        <ul class="list-disc text-justify">
-                            <li>
-                                <b>01 May 2023:</b> Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit. Sequi vero earum
-                                nemo, iste assumenda in rerum obcaecati a
-                                reiciendis illum.
-                            </li>
-                            <li>
-                                <b>01 May 2023:</b> Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit. Sequi vero earum
-                                nemo, iste assumenda in rerum obcaecati a
-                                reiciendis illum.
-                            </li>
-                            <li>
-                                <b>01 May 2023:</b> Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit. Sequi vero earum
-                                nemo, iste assumenda in rerum obcaecati a
-                                reiciendis illum.
-                            </li>
-                            <li>
-                                <b>01 May 2023:</b> Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit. Sequi vero earum
-                                nemo, iste assumenda in rerum obcaecati a
-                                reiciendis illum.
-                            </li>
-                            <li>
-                                <b>01 May 2023:</b> Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit. Sequi vero earum
-                                nemo, iste assumenda in rerum obcaecati a
-                                reiciendis illum.
+                        <p>
+                            Welcome to <b>1ToInfinity's</b> Roadmap! This page
+                            serves as a guide to our future plans and the
+                            direction we're taking. We've created this Roadmap
+                            to keep you informed about our upcoming features,
+                            improvements, and innovations. We hope this Roadmap
+                            will help you understand our vision and enable you
+                            to provide feedback and suggestions for our future.
+                        </p>
+                        <ul class="list-disc list-inside mt-8">
+                            <li v-for="roadmapPoint in roadmapPoints">
+                                <span v-html="roadmapPoint"></span>
                             </li>
                         </ul>
                     </div>
-                    <div class="text-xs">
-                        <b>Notes</b>
-                        <ul class="list-decimal text-justify">
-                            <li>
-                                We also have a private roadmap. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, vitae.*
-                            </li>
-                            <li>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse animi id harum cumque minus tempora.
-                            </li>
-                            <li>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse animi id harum cumque minus tempora.
-                            </li>
-                            <li>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse animi id harum cumque minus tempora.
-                            </li>
-                            <li>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse animi id harum cumque minus tempora.
-                            </li>
-                        </ul>
-                    </div>
+                    <p class="text-sm"><b>Note:</b> This is not the final roadmap. Will be ellaborating and changing things from this roadmap</p>
                 </div>
             </div>
         </section>
@@ -66,4 +29,13 @@
 
 <script setup>
 import Layout from "../Shared/Layout.vue";
+
+const roadmapPoints = [
+    "Publish a complete technical blog",
+    "Collborate with artists to create the numbers after number 3",
+    "Build a community to run and manage 1ToInfinity",
+    "Create functionality in existing website or create a separate platform where anyone will be able to create the art for numbers and post them and based on voting we can choose",
+    "Maybe revamp the website design",
+    "Run polls to select charities to donate money to",
+];
 </script>
