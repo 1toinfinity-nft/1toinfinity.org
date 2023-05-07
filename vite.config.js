@@ -15,6 +15,10 @@ export default defineConfig({
                     src: "resources/img/collection",
                     dest: "",
                 },
+                {
+                    src: "resources/img/favicon.ico",
+                    dest: "",
+                },
             ],
         }),
         vue(),
