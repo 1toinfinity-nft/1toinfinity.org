@@ -23,6 +23,7 @@
 
 <script setup>
 import { Head } from "@inertiajs/vue3";
+import MetaImageDefault from "../../img/meta-image-default.jpg";
 
 const props = defineProps({
     title: {
@@ -31,7 +32,7 @@ const props = defineProps({
     },
     metaTitle: {
         type: String,
-        default: "1ToInfinity",
+        default: "1ToInfinity - Collection of NFTs from 1 to infinity",
     },
     metaUrl: {
         type: String,
@@ -39,7 +40,7 @@ const props = defineProps({
     },
     metaImage: {
         type: String,
-        default: "https://1toinfinity.org/build/default.jpg",
+        default: MetaImageDefault,
     },
     metaDescription: {
         type: String,
