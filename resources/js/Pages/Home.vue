@@ -8,11 +8,11 @@
                 >
                     <div id="masthead-text" class="flex-1 text-left">
                         <div class="flex flex-col gap-8">
-                            <h4
+                            <p
                                 class="text-primary-light text-sm font-bold h-1"
                             >
                                 <span id="typed-formula">&nbsp;</span>
-                            </h4>
+                            </p>
                             <h1 class="text-white text-6xl font-bold">
                                 Explore the magical numbers starting from 1 to
                                 <span class="text-primary-light">Infinity</span>
@@ -28,7 +28,7 @@
                         </div>
                     </div>
                     <div id="masthead-milestone" class="flex-1 text-right">
-                        <img :src="MastheadGraph" class="h-96 mx-auto" />
+                        <img :src="MastheadGraph" class="h-96 mx-auto" alt="Random graph with x and y axis" />
                     </div>
                 </div>
             </div>
