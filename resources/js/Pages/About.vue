@@ -7,7 +7,7 @@
                     <div>
                         <img
                             class="h-30 w-full rounded-xl object-cover"
-                            :src="PlaceholderNft"
+                            :src="Logo"
                             alt="1 to infinity logo"
                         />
                     </div>
@@ -94,7 +94,7 @@
 
 <script setup>
 import Layout from "../Shared/Layout.vue";
-import PlaceholderNft from "../../img/placeholder-nft.jpg";
+import Logo from "../../img/logo.jpg";
 import TauseefShah from "../../img/tauseef-shah.jpg";
 import { Head } from "@inertiajs/vue3";
 </script>
