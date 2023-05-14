@@ -41,9 +41,9 @@
                             class="flex items-center text-white text-2xl font-bold"
                             v-for="navigationItem in navigationItems"
                         >
-                            <a :href="navigationItem.link">
+                            <Link :href="navigationItem.link">
                                 {{ navigationItem.label }}
-                            </a>
+                            </Link>
                         </li>
                         <li
                             class="flex items-center text-white text-2xl font-bold"
