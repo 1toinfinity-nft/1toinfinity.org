@@ -5,9 +5,7 @@
         <div class="container max-w-5xl mx-auto">
             <div class="flex justify-between items-center">
                 <div id="logo">
-                    <h1 class="text-center uppercase text-xl font-bold">
-                        1-to-Infinity
-                    </h1>
+                    <Logo classes="h-8 w-auto" />
                 </div>
                 <nav id="desktop-navigation" class="hidden md:block">
                     <ol class="flex gap-8 text-sm font-bold">
@@ -161,6 +159,8 @@
 <script setup>
 import { Link } from "@inertiajs/vue3";
 import { ref } from "vue";
+// import Logo from "../../svg/logo.svg";
+import Logo from "./Logo.vue";
 
 const navigationItems = [
     {
