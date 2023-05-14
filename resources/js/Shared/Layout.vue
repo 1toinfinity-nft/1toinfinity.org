@@ -1,5 +1,7 @@
 <template>
-    <header class="sticky inset-0 bg-transparent py-4 bg backdrop-blur-md z-50">
+    <header
+        class="sticky inset-0 bg-transparent backdrop-blur-md z-50 px-4 py-4 md:px-0"
+    >
         <div class="container max-w-5xl mx-auto">
             <div class="flex justify-between items-center">
                 <div id="logo">
@@ -119,7 +121,7 @@
 
     <slot />
 
-    <footer class="py-12">
+    <footer class="px-4 py-12 md:px-0">
         <div class="container max-w-5xl mx-auto">
             <div
                 class="flex flex-col justify-between items-center text-sm md:flex-row"

@@ -1,7 +1,7 @@
 <template>
     <Head :title="blog.title" />
     <Layout>
-        <section id="blog" class="py-12">
+        <section id="blog" class="px-4 py-12 md:px-0">
             <div class="container max-w-5xl mx-auto">
                 <h1 class="text-4xl text-center">
                     {{ blog.title }}

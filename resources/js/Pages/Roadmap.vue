@@ -1,7 +1,7 @@
 <template>
     <Head title="Roadmap" />
     <Layout>
-        <section id="roadmap" class="py-12">
+        <section id="roadmap" class="px-4 py-12 md:px-0">
             <div class="container max-w-5xl mx-auto">
                 <div class="flex flex-col gap-12 max-w-lg m-auto">
                     <h1 class="text-4xl text-center">Roadmap</h1>
@@ -21,7 +21,10 @@
                             </li>
                         </ul>
                     </div>
-                    <p class="text-sm"><b>Note:</b> This is not the final roadmap. Will be ellaborating and changing things from this roadmap</p>
+                    <p class="text-sm">
+                        <b>Note:</b> This is not the final roadmap. Will be
+                        ellaborating and changing things from this roadmap
+                    </p>
                 </div>
             </div>
         </section>

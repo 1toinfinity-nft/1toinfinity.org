@@ -1,9 +1,11 @@
 <template>
     <Head title="Home" />
     <Layout>
-        <section id="masthead" class="py-12 md:py-40">
+        <section id="masthead" class="px-4 py-12 md:px-0 md:py-40">
             <div class="container max-w-5xl mx-auto">
-                <div class="md:flex items-center justify-between">
+                <div
+                    class="flex flex-col items-center justify-between gap-12 md:flex-row"
+                >
                     <div id="masthead-text" class="flex-1 text-left">
                         <div class="flex flex-col gap-8">
                             <h4
@@ -13,7 +15,7 @@
                             </h4>
                             <h1 class="text-white text-6xl font-bold">
                                 Explore the magical numbers starting from 1 to
-                                <span class="text-primary-light">Infinty</span>
+                                <span class="text-primary-light">Infinity</span>
                                 here.
                             </h1>
                             <h3 class="text-white text-xl leading-5">
@@ -34,13 +36,13 @@
 
         <section
             id="recently-minted"
-            class="bg-gradient-to-b from-primary to-primary-dark py-12 md:py-40"
+            class="bg-gradient-to-b from-primary to-primary-dark px-4 py-12 md:px-0 md:py-40"
         >
             <div class="container max-w-5xl mx-auto">
                 <h2 class="text-2xl font-bold text-center mb-12">
                     Recently Minted
                 </h2>
-                <div class="grid grid-cols-3 gap-12 items-center">
+                <div class="grid gap-12 items-center md:grid-cols-3">
                     <img
                         class="h-30 w-full rounded-xl object-cover"
                         :src="item.preview"
@@ -52,13 +54,16 @@
             </div>
         </section>
 
-        <section id="why-numbers" class="bg-primary py-12 md:py-40">
+        <section
+            id="why-numbers"
+            class="bg-primary px-4 py-12 md:px-0 md:py-40"
+        >
             <div class="container max-w-5xl mx-auto">
                 <h2 class="text-2xl font-bold text-center mb-12">
                     Why Numbers
                 </h2>
                 <div
-                    class="mx-auto grid grid-cols-1 content-center gap-4 text-center font-bold md:grid-cols-4"
+                    class="mx-auto grid grid-cols-2 content-center gap-4 text-center font-bold md:grid-cols-4"
                 >
                     <div>
                         <svg

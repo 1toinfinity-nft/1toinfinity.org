@@ -1,9 +1,11 @@
 <template>
     <Head title="Collection" />
     <Layout>
-        <section id="collection" class="py-12">
+        <section id="collection" class="px-4 py-12 md:px-0">
             <div class="container max-w-5xl mx-auto">
-                <div class="grid grid-cols-3 gap-12 items-center">
+                <div
+                    class="grid grid-cols-1 gap-12 items-center md:grid-cols-3"
+                >
                     <img
                         class="h-30 w-full rounded-xl object-cover"
                         :src="item.preview"

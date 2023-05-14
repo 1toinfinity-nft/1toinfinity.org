@@ -1,7 +1,7 @@
 <template>
     <Head title="Blog" />
     <Layout>
-        <section id="blog" class="py-12">
+        <section id="blog" class="px-4 py-12 md:px-0">
             <div class="container max-w-5xl mx-auto">
                 <div class="flex flex-col gap-8">
                     <h1 class="text-4xl text-center">Blog</h1>
