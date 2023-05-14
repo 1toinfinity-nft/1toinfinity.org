@@ -7,4 +7,11 @@ export default [
         opensea: "https:/opensea.io/assets/ethereum/asset-address-will-be-here",
         published_at: "2023-05-07",
     },
+    {
+        number: "2",
+        words: "two",
+        preview: "/build/collection/two.jpg",
+        opensea: "https:/opensea.io/assets/ethereum/asset-address-will-be-here",
+        published_at: "2023-05-14",
+    },
 ];
