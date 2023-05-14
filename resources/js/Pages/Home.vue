@@ -142,10 +142,11 @@ import { Head } from "@inertiajs/vue3";
 
 setTimeout(function () {
     new Typed("#typed-formula", {
-        strings: ["K = 2NuP K = u"],
+        strings: ["a2 = b2 + c2", "C = V - E + F", "K = 2NuP K = u"],
         typeSpeed: 75,
         showCursor: false,
         smartBackspace: false,
+        loop: true,
     });
 }, 1000);
 
