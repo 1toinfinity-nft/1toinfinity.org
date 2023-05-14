@@ -1,5 +1,5 @@
 <template>
-    <Head title="Blog" />
+    <AppHead title="Blog" />
     <Layout>
         <section id="blog" class="px-4 py-12 md:px-0">
             <div class="container max-w-5xl mx-auto">
@@ -35,7 +35,7 @@
 <script setup>
 import { Link } from "@inertiajs/vue3";
 import Layout from "../../Shared/Layout.vue";
-import { Head } from "@inertiajs/vue3";
+import AppHead from "../../Shared/AppHead.vue";
 
 const props = defineProps({
     blogs: Object,

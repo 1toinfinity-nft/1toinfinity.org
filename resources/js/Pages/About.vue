@@ -1,5 +1,5 @@
 <template>
-    <Head title="About" />
+    <AppHead title="Home" />
     <Layout>
         <section id="about" class="px-4 py-12 md:px-0 md:py-40">
             <div class="container max-w-5xl mx-auto">
@@ -110,5 +110,5 @@
 import Layout from "../Shared/Layout.vue";
 import Logo from "../../img/logo.jpg";
 import TauseefShah from "../../img/tauseef-shah.jpg";
-import { Head } from "@inertiajs/vue3";
+import AppHead from "../Shared/AppHead.vue";
 </script>

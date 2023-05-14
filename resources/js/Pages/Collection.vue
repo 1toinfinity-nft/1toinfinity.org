@@ -1,5 +1,5 @@
 <template>
-    <Head title="Collection" />
+    <AppHead title="Collection" />
     <Layout>
         <section id="collection" class="px-4 py-12 md:px-0">
             <div class="container max-w-5xl mx-auto">
@@ -20,8 +20,8 @@
 </template>
 
 <script setup>
+import AppHead from "../Shared/AppHead.vue";
 import Layout from "../Shared/Layout.vue";
-import { Head } from "@inertiajs/vue3";
 
 // @todo REFACTOR - To collection.js file
 const collection = [

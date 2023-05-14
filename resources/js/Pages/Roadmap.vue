@@ -1,5 +1,5 @@
 <template>
-    <Head title="Roadmap" />
+    <AppHead title="Roadmap" />
     <Layout>
         <section id="roadmap" class="px-4 py-12 md:px-0">
             <div class="container max-w-5xl mx-auto">
@@ -32,8 +32,8 @@
 </template>
 
 <script setup>
+import AppHead from "../Shared/AppHead.vue";
 import Layout from "../Shared/Layout.vue";
-import { Head } from "@inertiajs/vue3";
 
 const roadmapPoints = [
     "Publish a complete technical blog",

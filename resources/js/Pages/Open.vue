@@ -1,5 +1,5 @@
 <template>
-    <Head title="Open" />
+    <AppHead title="Open" />
     <Layout>
         <section id="blog" class="py-12 md:py-40">
             <div class="container max-w-5xl mx-auto">
@@ -10,6 +10,6 @@
 </template>
 
 <script setup>
+import AppHead from "../Shared/AppHead.vue";
 import Layout from "../Shared/Layout.vue";
-import { Head } from "@inertiajs/vue3";
 </script>
