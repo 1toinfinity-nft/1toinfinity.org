@@ -43,5 +43,13 @@ const collection = [
         selling_price: NaN,
         published_at: "2023-05-14",
     },
+    {
+        number: "3",
+        words: "three",
+        preview: "/build/collection/three.jpg",
+        opensea: "https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/75954781589527691372109163814478728017512661675042353574069749891432500428801",
+        selling_price: NaN,
+        published_at: "2023-05-22",
+    },
 ];
 </script>
