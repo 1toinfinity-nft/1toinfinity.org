@@ -3,7 +3,7 @@
     <Layout>
         <section id="blog" class="px-4 py-12 md:px-0">
             <div class="container max-w-5xl mx-auto">
-                <h1 class="text-4xl text-center">
+                <h1 class="text-4xl text-center mb-4">
                     {{ blog.title }}
                 </h1>
                 <div v-html="marked.parse(props.blog.content)"></div>
